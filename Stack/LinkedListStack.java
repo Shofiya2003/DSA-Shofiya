@@ -29,6 +29,22 @@ public class LinkedListStack {
         head=node;
     }
 
+
+    //pop
+    public int pop() throws Exception{
+        if(head==null) throw new Exception("Stack is Empty");
+        int removedNum=head.data;
+        head=head.next;
+        return removedNum;
+    }
+
+    //Peek
+    public int peek() throws Exception{
+        if(head==null) throw new Exception("Stack is Empty");
+        return head.data;
+    }
+
+
     //print
     public void print(){
         Node temp=head;

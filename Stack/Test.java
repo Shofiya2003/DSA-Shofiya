@@ -5,5 +5,9 @@ public class Test {
        llStack.push(33);
        llStack.push(10);
        llStack.print();
+       llStack.pop();
+       llStack.print();
+       llStack.push(1);
+       llStack.print();
     }
 }
