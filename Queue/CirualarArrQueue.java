@@ -2,6 +2,12 @@ import java.security.spec.ECField;
 
 public class CirualarArrQueue {
 
+
+
+    static int length=16;
+    int rear; int front;
+    int size; int capacity;
+    private int[] aq;
     CirualarArrQueue(int capacity) {
         this.capacity = capacity;
         aq=new int[capacity];
@@ -13,12 +19,6 @@ public class CirualarArrQueue {
 
         this(length);
     }
-
-    static int length=16;
-    int rear; int front;
-    int size; int capacity;
-    private int[] aq;
-
     public int size(){
         return size;
     }
